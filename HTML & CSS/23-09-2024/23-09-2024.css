@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('cod14.jpg');
+    background-size: cover;
+    text-align: center;
+    color: red;
+}
+h1 {
+    font-size: 80px;
+    animation: typewriter 3s steps(40);
+}
+button.info {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2831a7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: spin 2s;
+}
+button.info:hover {
+    background-color: #f5d109;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.services {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(202, 202, 2);
+    border-radius: 50px;
+}
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    background-color: rgb(83, 79, 83);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+a.card-a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(62, 245, 62);
+}
+a.info-a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+}
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

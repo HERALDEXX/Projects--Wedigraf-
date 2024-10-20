@@ -1,0 +1,8 @@
+# Ignore the React Projects folder
+React Projects/
+
+# Ignore log files
+*.log
+
+Ignore temporary files
+*.tmp
