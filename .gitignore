@@ -1,8 +1,4 @@
-# Ignore the React Projects folder
 React Projects/
-
-# Ignore log files
+Django Projects/
 *.log
-
-Ignore temporary files
 *.tmp
